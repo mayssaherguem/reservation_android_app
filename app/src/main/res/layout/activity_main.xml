@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/messi"
+    android:layout_height="match_parent"
+    android:color="#FFEB3B"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/addReservationButton"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="35dp"
+        android:fontFamily="sans-serif"
+        android:text="Reserve your football pitch now !"
+        android:textAlignment="center"
+        android:textColor="#EAE6C1"
+        android:textSize="22dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/soccerleague"
+        android:text="CAMP NOU STADUIM"
+        android:textAlignment="center"
+        android:textColor="#FFEB3B"
+        android:textSize="37dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/currentDateTimeTextView"
+        android:fontFamily="@font/messina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Date et heure actuelles"
+        android:textColor="#E4D126"
+        android:textSize="18dp"/>
+
+
+    <Button
+        android:id="@+id/viewReservationsButton"
+        android:layout_width="306dp"
+        android:layout_height="51dp"
+        android:layout_below="@id/currentDateTimeTextView"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="100dp"
+        android:backgroundTint="#FBF29E"
+        android:text="See all reservations"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/addReservationButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="114dp"
+        android:layout_marginBottom="368dp"
+        android:backgroundTint="#FBF29E"
+        android:text="ADD RESERVATION"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="20dp"
+        android:text="Sami &amp; Azer &amp; Maissa &amp; Marwa 2023-2024"
+        android:textColor="@color/white" />
+</RelativeLayout>
