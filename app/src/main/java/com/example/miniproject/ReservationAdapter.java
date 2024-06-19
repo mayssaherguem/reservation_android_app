@@ -40,6 +40,17 @@ public class ReservationAdapter extends RecyclerView.Adapter<ReservationAdapter.
         holder.reservationTextView.setText("Name: " + reservation.getName() + "\nDate: " + reservation.getDate() + "\nTime: " + reservation.getTime());
 
 
+        holder.editButton.setOnClickListener(v -> {
+            Intent editIntent = new Intent(context, EditReservationActivity.class);
+            editIntent.putExtra("reservationId", reservation.getId());
+            editIntent.putExtra("Name", reservation.getName());
+            editIntent.putExtra("Date", reservation.getDate());
+            editIntent.putExtra("Time", reservation.getTime());
+            context.startActivity(editIntent);
+
+        });
+
+
         holder.deleteButton.setOnClickListener(v -> {
             DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("reservations").child(reservation.getId());
             databaseReference.removeValue();

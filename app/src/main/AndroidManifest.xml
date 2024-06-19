@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.miniproject">
-
     <!-- Permissions -->
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -16,28 +15,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MiniProject"
         tools:targetApi="31">
-
+        <activity
+            android:name=".EditReservationActivity"
+            android:exported="false" />
         <!-- Main Activity -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <!-- AddReservationActivity -->
+        </activity> <!-- AddReservationActivity -->
         <activity android:name=".AddReservationActivity" />
         <activity android:name=".ReservationDetailActivity" />
         <activity android:name=".ReservationsListActivity" />
-
-
-
-        <!-- Déclarez ici toutes vos autres activités -->
-        <!-- Par exemple : -->
-        <!-- <activity android:name=".AnotherActivity" /> -->
-
     </application>
 
 </manifest>
